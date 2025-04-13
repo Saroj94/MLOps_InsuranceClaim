@@ -67,5 +67,5 @@ MODEL_EVALUATION_CHANGED_THRESHOLD_SCORE: float = 0.02
 MODEL_BUCKET_NAME = "claimproj"
 MODEL_PUSHER_S3_KEY = "model-registry"
 
-APP_HOST = "0.0.0.0"
+APP_HOST = "localhost"
 APP_PORT = 8000
