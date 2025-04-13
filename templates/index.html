@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Insurance Prediction</title>
+    <!-- Corrected the CSS path -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Insurance Claim Prediction</h1>
+
+        <form method="post" action="/">
+            <label for="subscription_length">Subscription Length:</label>
+            <input type="number" step="any" id="subscription_length" name="subscription_length"required>
+
+            <label for="vehicle_age">Vehicle Age:</label>
+            <input type="number" step="any" id="vehicle_age" name="vehicle_age" required>
+
+            <label for="customer_age">Customer Age:</label>
+            <input type="number" step="any" id="customer_age" name="customer_age" required>
+
+            <label for="region_code">Region Code:</label>
+            <input type="text" id="region_code" name="region_code" required>
+
+            <label for="region_density">Region Density:</label>
+            <input type="number" step="any" id="region_density" name="region_density" required>
+
+            <label for="segment">Segment:</label>
+            <input type="text" id="segment" name="segment" required>
+
+            <label for="model">Model:</label>
+            <input type="text" id="model" name="model" required>
+
+            <label for="fuel_type">Fuel Type (CNG, Diesel, Petrol):</label>
+            <input type="text" step="any" id="fuel_type" name="fuel_type" required>
+
+            <label for="max_torque">Max Torque:</label>
+            <input type="text" id="max_torque" name="max_torque" required>
+
+            <label for="max_power">Max Power:</label>
+            <input type="text" id="max_power" name="max_power" required>
+
+            <label for="engine_type">Engine Type:</label>
+            <input type="text" id="engine_type" name="engine_type" required>
+
+            <label for="airbags">Airbags:</label>
+            <input type="number" step="any" id="airbags" name="airbags" min="0" max="6" required>
+
+            <label for="is_esc">Electronic Stability Control-ESC (No, Yes):</label>
+            <input type="text" id="is_esc" name="is_esc" required>
+
+            <label for="is_adjustable_steering">Adjustable Steering (No, Yes):</label>
+            <input type="text" id="is_adjustable_steering" name="is_adjustable_steering" required>
+
+            <label for="is_tpms">Tyre Pressure Monitoring ( No,  Yes):</label>
+            <input type="text"  id="is_tpms" name="is_tpms" required>
+
+            <label for="is_parking_sensors">Parking Sensors (No, Yes):</label>
+            <input type="text"  id="is_parking_sensors" name="is_parking_sensors"  required>
+
+            <label for="is_parking_camera">Parking Camera (No, Yes):</label>
+            <input type="text"  id="is_parking_camera" name="is_parking_camera"  required>
+
+            <label for="rear_brakes_type">Rear Brakes Type (Disc, Drum):</label>
+            <input type="text"  id="rear_brakes_type" name="rear_brakes_type"  required>
+
+            <label for="displacement">Displacement:</label>
+            <input type="number" step="any" id="displacement" name="displacement" required>
+
+            <label for="cylinder">Cylinder:</label>
+            <input type="number" step="any" id="cylinder" name="cylinder" required>
+
+            <label for="transmission_type">Transmission Type(Automatic, Manual):</label>
+            <input type="text"  id="transmission_type" name="transmission_type"  required>
+
+            <label for="steering_type">Steering Type (Electric, Manual, Power):</label>
+            <input type="text"  id="steering_type" name="steering_type"  required>
+
+            <label for="turning_radius">Turning Radius:</label>
+            <input type="number" step="any" id="turning_radius" name="turning_radius" required>
+
+            <label for="length">Length:</label>
+            <input type="number" step="any" id="length" name="length" required>
+
+            <label for="width">Width:</label>
+            <input type="number" step="any" id="width" name="width" required>
+
+            <label for="gross_weight">Gross Weight:</label>
+            <input type="number" step="any" id="gross_weight" name="gross_weight" required>
+            
+            <label for="is_front_fog_lights">Front Fog Lights (No, Yes):</label>
+            <input type="text" id="is_front_fog_lights" name="is_front_fog_lights"  required>
+
+            <label for="is_rear_window_wiper">Rear Window Wiper ( No, Yes):</label>
+            <input type="text"id="is_rear_window_wiper" name="is_rear_window_wiper"  required>
+
+            <label for="is_rear_window_washer">Rear Window Washer ( No,  Yes):</label>
+            <input type="text"  id="is_rear_window_washer" name="is_rear_window_washer"  required>
+
+            <label for="is_rear_window_defogger">Rear Window Defogger (No, Yes):</label>
+            <input type="text"  id="is_rear_window_defogger" name="is_rear_window_defogger"  required>
+
+            <label for="is_brake_assist">Brake Assist (No, Yes):</label>
+            <input type="text"  id="is_brake_assist" name="is_brake_assist"  required>
+
+            <label for="is_power_door_locks">Power Door Locks (No, Yes):</label>
+            <input type="text"  id="is_power_door_locks" name="is_power_door_locks"  required>
+
+            <label for="is_central_locking">Central Locking (No, Yes):</label>
+            <input type="text"  id="is_central_locking" name="is_central_locking" required>
+
+            <label for="is_power_steering">Power Steering (No,Yes):</label>
+            <input type="text" step="any" id="is_power_steering" name="is_power_steering"  required>
+
+            <label for="is_driver_seat_height_adjustable">Driver Seat Height Adjustable(No, Yes):</label>
+            <input type="text"  id="is_driver_seat_height_adjustable" name="is_driver_seat_height_adjustable"  required>
+
+            <label for="is_day_night_rear_view_mirror">Day-Night Rear View Mirror (No, Yes):</label>
+            <input type="text"  id="is_day_night_rear_view_mirror" name="is_day_night_rear_view_mirror"  required>
+
+            <label for="is_ecw">Engine Check Warning (ECW) (No, Yes):</label>
+            <input type="text"  id="is_ecw" name="is_ecw"  required>
+
+            <label for="is_speed_alert">Speed Alert (No, Yes):</label>
+            <input type="text"  id="is_speed_alert" name="is_speed_alert"  required>
+
+            <label for="ncap_rating">Safety rating(ncap):</label>
+            <input type="number" step="any" id="ncap_rating" name="ncap_rating" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        <form method="get" action="/train">
+            <button type="submit" class="train-button">Train Model</button>
+        </form>
+
+        {% if context %}
+            <div class="result">
+                <h2>Result: {{ context }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
