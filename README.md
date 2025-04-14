@@ -16,7 +16,7 @@ Welcome to the **Claim Prediction ML Pipeline**, an end-to-end machine learning 
 ## 🛠️ Project Setup
 
 ### 1. 🔧 Project Initialization
-```bash
+
 # Run project template generator
 python template.py
 
